@@ -1,0 +1,39 @@
+@startuml
+skinparam classAttributeIconSize 0
+class CampoMinato {
+
+    -dimensioneCampo : int
+    -simboloCampo : String
+    -random : Random
+    -riga : int
+    -colonna : int
+
+    +CampoMinato() : void 
+    +popolaCampo() : void 
+    +stampaCampo() : void 
+    +controllaMine() : boolean
+    +descrizione() : void
+    +Random() : Random
+    
+
+}
+
+class Program {
+
+    -punteggio : int
+    -isGameOver : boolean
+    -nomePlayer : String
+    -grandezzaCampo : int
+    -simboloCampo : String
+    -celleTotali : int
+    -regoleGioco : String
+    -random : Random
+    -riga : int
+    -colonna : int
+
+    +Program() : void 
+    +Random() : Random
+    
+
+}
+@enduml
